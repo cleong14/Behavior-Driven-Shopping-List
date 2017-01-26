@@ -5,6 +5,9 @@ var should = chai.should();
 
 // describe(); <--- starting point
 describe('ShoppingListItem', function () {
+  var item;
+
+  beforeEach();
   // it(); <--- starting point
 
   // ShoppingListItem is a class
