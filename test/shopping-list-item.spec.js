@@ -7,7 +7,11 @@ var should = chai.should();
 describe('ShoppingListItem', function () {
   var item;
 
-  beforeEach();
+  // before each time this test is ran, it makes 'item' a new class instance
+  beforeEach(function () {
+    item = new ShoppingListItem();
+  });
+  
   // it(); <--- starting point
 
   // ShoppingListItem is a class
