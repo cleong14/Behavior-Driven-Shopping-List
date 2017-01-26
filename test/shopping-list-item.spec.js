@@ -45,4 +45,16 @@ describe('ShoppingListItem', function () {
   it('invoking "uncheck" should will set "is_done" property to false', function () {
     expect(item.uncheck()).to.equal(false);
   });
+
+  it('it should have a method named "render"', function () {
+    expect(item.render).to.be.a('function');
+  });
+
+  it('it should return an unordered list and constructs and returns a html formatted string. The string should be wrapped in " "', function () {
+    expect(item.render()).to.equal('<ul><li class="completed_' + item.is_done + '"> \ <span>' + item.name + '</span> \ <span>' + item.description + '</span> \ </li></ul>');
+  });
+
+  it.skip('it should construct and return a html formatted string. The string will be wrapped in " "', function () {
+    expect(item.render()).to.equal('<li class="completed_' + item.is_done + '"> \ <span>' + item.name + '</span> \ <span>' + item.description + '</span> \ </li>');
+  });
 });
