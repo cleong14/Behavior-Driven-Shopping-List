@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/cleong14/Behavior-Driven-Shopping-List/issues"
   },
-  "homepage": "https://github.com/cleong14/Behavior-Driven-Shopping-List#readme"
+  "homepage": "https://github.com/cleong14/Behavior-Driven-Shopping-List#readme",
+  "directories": {
+    "test": "test"
+  }
 }
