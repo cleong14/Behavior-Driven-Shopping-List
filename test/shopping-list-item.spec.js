@@ -1,5 +1,4 @@
 var chai = require('chai');
-
 var expect = chai.expect;
 var should = chai.should();
 
@@ -8,9 +7,9 @@ describe('ShoppingListItem', function () {
   var item;
 
   // before each time this test is ran, it makes 'item' a new class instance
-  beforeEach(function () {
-    item = new ShoppingListItem();
-  });
+  // beforeEach(function () {
+  //   item = new ShoppingListItem();
+  // });
   
   // it(); <--- starting point
 
@@ -26,8 +25,15 @@ describe('ShoppingListItem', function () {
     expect(ShoppingListItem).to.have.property("name");
   });
 
-  // ShoppingListItem has a propety name description
+  // ShoppingListItem has a propety named 'description'
   it("should have a property named 'description'", function () {
     expect(ShoppingListItem).to.have.property("description");
   });
+
+  // ShoppingListItem has a property named 'is_done'
+  it("should have a property named 'is_done'", function () {
+    expect(ShoppingListItem).to.have.property("is_done");
+  });
+
+  
 });
